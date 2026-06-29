@@ -1,0 +1,138 @@
+.contact-intro {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px !important;
+  transition: border-color 0.25s;
+}
+.contact-card:hover { border-color: var(--accent) !important; }
+
+.contact-card-icon {
+  font-size: 1.1rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.contact-card-value {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-top: 1px;
+}
+.contact-card-value.link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.contact-card-value.link:hover { text-decoration: underline; }
+
+/* Social row */
+.contact-social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-social-btn {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.contact-social-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+/* Form */
+.contact-form-wrap {
+  padding: 32px !important;
+}
+
+.contact-input {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: 8px !important;
+  transition: border-color 0.2s !important;
+}
+.contact-input:focus, .contact-input:hover {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(94,234,212,0.1) !important;
+}
+.contact-input::placeholder { color: var(--text-muted) !important; }
+
+.send-btn {
+  margin-top: 4px;
+  height: 44px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+}
+
+/* Sent State */
+.sent-state {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeUp 0.4s ease;
+}
+.sent-icon {
+  font-size: 3rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 16px;
+}
+.sent-state h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.sent-state p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Ant Design Label color fix */
+.ant-form-item .ant-form-item-label > label {
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+}

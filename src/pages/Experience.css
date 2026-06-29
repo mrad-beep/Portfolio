@@ -1,0 +1,150 @@
+.exp-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Exp Cards */
+.exp-item {
+  margin-bottom: 16px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  padding: 20px 22px !important;
+}
+.exp-item:hover { border-left-color: var(--item-color, var(--accent)); }
+.exp-item.active {
+  border-left-color: var(--item-color, var(--accent));
+  background: var(--bg-card-hover) !important;
+}
+
+.exp-item-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.exp-icon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.exp-meta { flex: 1; }
+.exp-role {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.exp-company {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.exp-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+.exp-badge.current {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.exp-duration {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  margin-left: 54px;
+}
+
+/* Expandable */
+.exp-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s;
+  opacity: 0;
+}
+.exp-detail.open {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 16px;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.exp-bullets {
+  list-style: none;
+  padding: 0;
+}
+.exp-bullets li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+.exp-bullets li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  top: 3px;
+}
+
+.exp-toggle {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: 12px;
+  text-align: right;
+  user-select: none;
+}
+
+/* Timeline */
+.exp-timeline-wrap {
+  position: sticky;
+  top: 88px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.tl-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.tl-content strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+.tl-company {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .exp-layout { grid-template-columns: 1fr; }
+  .exp-timeline-wrap { display: none; }
+}
