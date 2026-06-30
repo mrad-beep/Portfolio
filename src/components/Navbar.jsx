@@ -144,7 +144,7 @@ export default function Navbar({ isDark, toggleTheme }) {
 
           <li>
             <a
-              href="/Mradul_Shrotriya_Resume.pdf"
+              href="/Mradul_Shrotriya_webdev.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="drawer-link"

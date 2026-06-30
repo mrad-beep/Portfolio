@@ -119,7 +119,7 @@ export default function Skills({ isDark }) {
 
       {/* All tech stack pills (decorative bottom bar) */}
       <div className="tech-pills fade-up fade-up-3">
-        {["React.js", "JavaScript", "Python", "Java", "SQL", "Git", "Power BI", "Docker", "REST API", "HTML5", "CSS3", "Postman"].map((t, i) => (
+        {["React.js", "JavaScript", "Python", "Java", "SQL", "Git", "AntDesign", "Docker", "REST API", "HTML5", "CSS3", "Postman"].map((t, i) => (
           <span key={i} className="tech-pill">{t}</span>
         ))}
       </div>

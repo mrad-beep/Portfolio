@@ -107,7 +107,7 @@ export default function Projects({ isDark }) {
                 ))}
               </ul>
               <div className="proj-actions">
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="proj-btn"
+                <a href="https://github.com/mrad-beep?tab=repositories" target="_blank" rel="noreferrer" className="proj-btn"
                    onClick={e => e.stopPropagation()}>
                   <GithubOutlined /> GitHub
                 </a>

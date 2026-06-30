@@ -95,7 +95,7 @@
 
 /* Mobile Menu Button */
 .menu-btn {
-  color: var(--text-primary) !important;
+  color: var(--text-secondary) !important;
   display: none !important;
 }
 
@@ -104,6 +104,8 @@
   font-size: 1.3rem;
   font-weight: 800;
   color: var(--text-primary);
+  background: var(--bg-card);
+   color: var(--accent);
 }
 
 .drawer-links {
@@ -119,6 +121,7 @@
   border-radius: 10px;
   text-decoration: none;
   font-size: 0.9rem;
+  background: var(--bg-card);
   font-weight: 500;
   color: var(--text-primary);
   margin-bottom: 4px;
@@ -136,7 +139,6 @@
 .resume-btn:hover{
     color: var(--accent);
 }
-
 .drawer-link:hover { color: var(--text-primary); background: var(--bg-card); }
 .drawer-link.active { color: var(--accent); background: var(--accent-soft); }
 .drawer-icon { font-size: 1rem; }
