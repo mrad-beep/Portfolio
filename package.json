@@ -11,10 +11,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "antd": "^5.27.5",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-router-dom": "6.28.0",
+    "react-router": "^8.1.0",
+    "react-router-dom": "^7.18.1",
     "react-scroll": "^1.9.3"
   },
   "devDependencies": {
