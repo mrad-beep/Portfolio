@@ -83,12 +83,12 @@ export default function Navbar({ isDark, toggleTheme }) {
 
           <li>
             <a
-              href="/Mradul_Shrotriya_webdev.pdf"
+              href="/Mradul_Shrotriya_webdev_digital.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"
             >
-              Resume
+              Resume/CV
             </a>
           </li>
         </ul>
@@ -150,7 +150,7 @@ export default function Navbar({ isDark, toggleTheme }) {
               className="drawer-link"
               onClick={() => setDrawerOpen(false)}
             >
-              📄 <span style={{ marginLeft: "10px" }}>Resume</span>
+              📄 <span style={{ marginLeft: "10px" }}>Resume/CV</span>
             </a>
           </li>
         </ul>

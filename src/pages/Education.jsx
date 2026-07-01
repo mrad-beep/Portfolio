@@ -54,7 +54,7 @@ function ScoreRing({ score, type }) {
       </svg>
       <div className="score-ring-text">
         <span className="score-val">{score.replace("CGPA: ", "")}</span>
-        <span className="score-type">{type === "cgpa" ? "CGPA" : "%"}</span>
+        <span className="score-type">{type === "cgpa" ? "CGPA" : ""}</span>
       </div>
     </section>
   );
